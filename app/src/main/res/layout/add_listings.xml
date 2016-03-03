@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ItemNameTV"
+        android:text="ItemNameTV"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ItemNameET"
+        android:hint="ItemNameETHint"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ItemPriceTV"
+                android:text="ItemPriceTV"
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ItemPriceET"
+                android:hint="ItemPriceETHint"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ItemConditionTV"
+                android:text="ItemConditionTV"
+
+                />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="left">
+                <RadioButton android:id="@+id/NewConditionRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NewCondition"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/UsedConditionRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UsedCondition"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CategoriesTV"
+                android:text="CategoriesTV"
+
+                />
+            <Spinner
+                android:id="@+id/Spinner_Categories"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="photo1"
+            android:id="@+id/addImageIV"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ISBNTV"
+        android:text="ISBN"
+        android:enabled="false"
+
+        />
+
+    <EditText
+        android:id="@+id/ISBNET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ISBN"
+        android:enabled="false"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DescriptionTV"
+        android:text="ItemDescriptionTV"
+
+        />
+
+    <EditText
+        android:id="@+id/itemDescriptionET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ItemDescriptionETHint"
+        android:inputType="textMultiLine"
+        android:maxLength="2000"
+        android:maxLines="4" />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListButton"
+        android:text="ListButton"
+
+
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ClearButton"
+        android:text="Clear Photo"
+
+
+        />
+
+</LinearLayout>
+
+
